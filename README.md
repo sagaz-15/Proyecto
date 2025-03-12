@@ -1,3 +1,5 @@
+Esquema del preyecto:
+
 📁 Proyecto (Carpeta del proyecto)
 
    📂 src/com/Proyecto/ → Código fuente principal
