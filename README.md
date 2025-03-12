@@ -1,5 +1,7 @@
 📁 Proyecto (Carpeta del proyecto)
+
    📂 src/com/Proyecto/ → Código fuente principal
+   
       📂 historial/ → Implementación de pilas
       📂 pestañas/ → Implementación de listas enlazadas
       📂 descargas/ → Implementación de colas
