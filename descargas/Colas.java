@@ -3,7 +3,7 @@ package descargas;
 import java.util.Arrays;
 
 public class Colas {
-    private int numElememtos;  // typo in variable name, it should be numElementos
+    private int numElememtos;
     private int inicio;
     private int end;
     private String[] cola;

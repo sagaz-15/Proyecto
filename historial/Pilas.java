@@ -1,39 +1,38 @@
 package historial;
 import pestanas.ListasDobles;
-import pestanas.Nodo;
 
-public class Pilas {
-    public Pilas() {
+import java.util.Objects;
+
+public class Pilas<T> extends ListaDoble<T> {
+
+    public Pilas(){
         super();
     }
-    public void push(String dato){
-        super.insertarPrimero(dato);
+
+    // Empty
+    public boolean empty(){
+        return cantidadNodos == 0;
     }
-    public Nodo pop(){
-        Nodo actual = cola.anterior;
-        Nodo anterior = actual.anterior;
-        Nodo siguiente = cola;
-        anterior.siguiente = cola;
-        siguiente.anterior = anterior;
-        actual.siguiente = null;
-        actual.anterior = null;
-        return actual;
+    public T peek(){
+        return head.getSig().getDato();
     }
-    public void mostrar(){
-        super.mostrarLista();
+    public T pop(){
+        return super.remove();
     }
 
-    public static void main(String[] args) {
-        Pila p = new Pila();
-        p.push("coco");
-        p.push("yuca");
-        p.push("arepa");
-        System.out.println("principio de pila");
-        p.mostrar();
-        Nodo eliminado =p.pop();
-        System.out.println("Nodo eliminado ="+eliminado.inf);
-        System.out.println("Pila despues de eliminar");
-        p.mostrar();
+    public  T push(T dato){
+        super.remove();
+        return dato;
     }
 
+    public int search(T dato){
+        Nodo<T> nodo = head;
+        for (int i = 0; i <cantidadNodos ; i++) {
+            nodo= nodo.getSig();
+            if (Objects.equals(nodo.getDato(),dato)){
+                return i+1;
+            }
+        }
+        return -1;
+    }
 }

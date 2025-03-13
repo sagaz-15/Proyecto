@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Historial/Historial.iml" filepath="$PROJECT_DIR$/Historial/Historial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Main/Main.iml" filepath="$PROJECT_DIR$/Main/Main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Proyecto.iml" filepath="$PROJECT_DIR$/.idea/Proyecto.iml" />
-      <module fileurl="file://$PROJECT_DIR$/descargas/descargas.iml" filepath="$PROJECT_DIR$/descargas/descargas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grafos/grafos.iml" filepath="$PROJECT_DIR$/grafos/grafos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/marcadores/marcadores.iml" filepath="$PROJECT_DIR$/marcadores/marcadores.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pestanas/pestanas.iml" filepath="$PROJECT_DIR$/pestanas/pestanas.iml" />
     </modules>
   </component>
 </project>

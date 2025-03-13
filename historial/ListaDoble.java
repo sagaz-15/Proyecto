@@ -1,13 +1,13 @@
-package pestanas;
+package historial;
 
 import java.util.Objects;
 
-public class ListasDobles<T> {
+public class ListaDoble<T> {
     protected Nodo<T> head;
     protected Nodo<T> tail;
     protected int cantidadNodos;
 
-    public ListasDobles() {
+    public ListaDoble() {
         this.head = new Nodo<>();
         this.tail = new Nodo<>();
         head.setSig(tail);
